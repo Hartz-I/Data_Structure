@@ -77,6 +77,8 @@ class LinkedList:
         
         Insertion takes constant time
         getting to the index takes O(n) time
+        
+        Overall O(n)
         """
         
         current = self.head
@@ -104,6 +106,11 @@ class LinkedList:
             count +=1
             
     def remove(self, key):
+        """
+        Removes the first node that matches the key
+        
+        runtime O(n)
+        """
         current = self.head
         
         if key == current.data:
